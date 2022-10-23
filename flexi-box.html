@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box practice</title>
+    <style>
+    /* #main{
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+        background-color: blueviolet; */
+    /* } */
+    body{
+        background-color: rgb(25, 165, 230);
+    }
+    #nav-bar{
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    nav{
+        background-color: aquamarine;
+    }
+    nav:hover{
+        background-color: yellowgreen;
+    }
+    nav ul{
+       list-style-type: none;
+       padding: 0;
+    }
+    nav a{
+        text-decoration: none;
+        color:black;
+        padding: 10px;
+        display: block;
+        text-align: center;
+        background-color: antiquewhite;
+    }
+    nav a:hover{
+        background-color: rgb(129, 138, 112);
+    }
+    a.tw{
+        background-image: url(./Icons/twitter_icon.svg) no-repeat center;
+        background-size: 80%;
+    }
+    a.github{
+        background-image: url(./Icons/github_icon.svg) no-repeat center ;
+    }
+    @media screen and (min-width:500px){
+        nav ul{
+            display: flex;
+        }
+    
+        nav li{
+            /* flex: 1 1 0; */
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    } */
+     .box{
+      height: 100px;  
+      flex: 1 0 200px;
+
+     }
+    .one{
+      background-color: rgb(44, 31, 13);
+    }
+    .two{
+        background-color: aquamarine;
+    }
+    .three{
+        background-color: bisque;
+    }
+    </style>
+</head>
+<div id="nav-bar">
+<nav>
+    <ul>
+        <li><a href="home">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="projects">Projects</a></li>
+        <li><a href="support">Support</a></li>
+    </ul>
+    <ul class="social">
+        <li><a href="" class="tw">Twitter</a></li>
+        <li><a href="" class="github">Github</a></li>
+    </ul>
+</nav> 
+</div>
+<body>
+    <div id="main">
+        <div class="container">
+            <div class="box one"></div>
+            <div class="box two"></div>
+            <div class="box three"></div>
+        </div>
+    </div>
+
+</body>
+</html>
